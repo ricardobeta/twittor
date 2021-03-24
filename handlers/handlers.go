@@ -7,6 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/ricardobeta/twittor/middleW"
+	"github.com/ricardobeta/twittor/routers"
 	"github.com/rs/cors"
 )
 

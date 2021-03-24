@@ -12,7 +12,7 @@ func InsertoRegistro(u models.Usuario) (string, bool, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	db := MongoC.Database("twittor")
+	db := MongoC.Database("AWD")
 	col := db.Collection("usuarios")
 	u.Password, _ = EncriptarPassword(u.Password)
 	result, err := col.InsertOne(ctx, u)
